@@ -1,6 +1,6 @@
 import React, { Component, useEffect } from "react";
 import { init } from "ityped";
-import "./skills.scss";
+import "./Skills.scss";
 
 const Skills = () => {
   const skillsArr = [
@@ -200,12 +200,12 @@ const Skills = () => {
           showCursor: false,
           strings: [skillsArr[i].words[j].text],
           loop: false,
-          startDelay: 300 * (j + 1) + prevDelay + prevLen,
-          typeSpeed: 50,
+          startDelay: 170 * (j + 1) + prevDelay + prevLen,
+          typeSpeed: 40,
         });
 
-        prevLen += skillsArr[i].words[j].text.length * 50;
-        prevDelay += 300 * (j + 1);
+        prevLen += skillsArr[i].words[j].text.length * 40;
+        prevDelay += 170 * (j + 1);
       }
     }
   }, []);

@@ -1,0 +1,34 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .about-wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .about-about {
+      background-color: white;
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 10px 30px;
+      font-size: 25px;
+    }
+  }
+
+  .about-skills {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    left: 20%;
+  }
+}

@@ -1,24 +1,16 @@
 import React from "react";
 import Particles from "react-tsparticles";
-// import Skills from "../../helpers/skills";
-import Skills from "./Skills/Skills";
-
+import Experience from "./Experience/Experience.jsx";
+import Projects from "./Projects/Projects.jsx";
+import Contact from "./Contact/Contact";
+import About from "./About/About";
+import COLORS from "../../../COLORS.js";
 import "./Home.scss";
 
 const Home = () => {
-  const particlesInit = (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   return (
     <div className="home">
-      <div className="main">
+      <div id="intro" className="main">
         <Particles
           id="tsparticles"
           options={{
@@ -58,10 +50,10 @@ const Home = () => {
             },
             particles: {
               color: {
-                value: "#7F7F7F",
+                value: COLORS.main,
               },
               links: {
-                color: "#7f7f7f",
+                color: COLORS.dark,
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
@@ -83,7 +75,7 @@ const Home = () => {
                   enable: true,
                   area: 800,
                 },
-                value: 30,
+                value: 10,
               },
               opacity: {
                 value: 0.5,
@@ -109,63 +101,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="skills">
-        <div className="header">
-          <h2>SKILLS</h2>
-        </div>
-        <div className="wrapper">
-          <Skills />
-          {/* {Skills.map((skill) => {
-            return (
-              <div className="skill">
-                <h3>{skill.name}</h3>
-                <div
-                  className="progressbar"
-                  style={{ width: skill.experience }}
-                ></div>
-              </div>
-            );
-          })} */}
-        </div>
-      </div>
+
+      <About />
+
       {/* Experience section */}
-      <div className="experience">
-        <div className="header">
-          <h2>EXPERIENCE</h2>
-        </div>
-        <div className="wrapper">
-          <div className="work">
-            <div className="title">
-              <h3>Volunteer Software Engineer</h3>
-              <h4>Darbe</h4>
-            </div>
-            <div className="description">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae officia ipsum neque distinctio similique voluptas?
-                Quisquam at vero aliquam debitis laudantium, ipsum distinctio ex
-                quia dicta dolorem, sed iusto delectus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Experience />
 
       {/* Projects section */}
-      <div className="projects">
-        <div className="header">
-          <h2>PROJECTS</h2>
-        </div>
-        <div className="wrapper"></div>
-      </div>
+      <Projects />
 
       {/* Contact section */}
-      <div className="contact">
-        <div className="header">
-          <h2>CONTACT</h2>
-        </div>
-        <div className="wrapper"></div>
-      </div>
+      <Contact />
     </div>
   );
 };

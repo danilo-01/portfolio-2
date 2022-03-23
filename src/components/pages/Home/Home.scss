@@ -2,13 +2,23 @@
 
 .header {
   h2 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 30px;
     letter-spacing: 3px;
+    margin-top: 90px;
   }
 }
 
+.section {
+  margin: 10rem 0;
+}
+
+.card {
+  box-shadow: -5px 5px 10px #7f7f7f6e;
+}
+
 .home {
+  user-select: none;
   .main {
     display: flex;
     justify-content: center;
@@ -58,13 +68,6 @@
     }
   }
 
-  .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .experience {
     display: flex;
     flex-direction: column;
@@ -90,68 +93,3 @@
     z-index: -1;
   }
 }
-
-// .skills {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   user-select: none;
-
-//   .wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 10px;
-//     width: 60%;
-//     border-radius: 5px;
-
-//     transition: all 0.2s ease-in;
-
-//     .skill {
-//       color: black;
-//       background-color: rgba(153, 153, 153, 0.589);
-//       text-align: center;
-//       display: flex;
-//       justify-content: flex-start;
-//       align-items: center;
-//       border-bottom: 1px solid #7f7f7f62;
-//       margin: 8px 0;
-//       cursor: pointer;
-//       border-radius: 8px;
-//       transition: all 0.1s ease-in;
-
-//       &:hover {
-//         box-shadow: 0px 3px 3px #7f7f7f4d;
-
-//         h3 {
-//           transition: all 0.1s ease-in;
-//           font-weight: 700;
-//         }
-
-//         .progressbar {
-//           transition: all 0.1s ease-in;
-//           height: 15px;
-//         }
-//       }
-
-//       h3 {
-//         transition: all 0.1s ease-in;
-//         width: 120px;
-//         font-weight: 400;
-//       }
-
-//       .progressbar {
-//         max-width: 100%;
-//         height: 8px;
-//         border-radius: 5px;
-//         background: linear-gradient(
-//           90deg,
-//           rgb(255, 255, 255) 0%,
-//           rgb(168, 230, 255) 25%,
-//           rgb(116, 216, 255) 100%
-//         );
-//         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.26);
-//       }
-//     }
-//   }
-// }
