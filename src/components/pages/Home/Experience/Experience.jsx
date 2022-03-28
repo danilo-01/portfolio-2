@@ -1,6 +1,7 @@
 import React from "react";
 import experiences from "./experience.js";
 import ScrollAnimationItem from "react-scroll-fade-animation";
+import { v4 as uuidv4 } from "uuid";
 import "./Experience.scss";
 
 const Experience = () => {
@@ -18,6 +19,7 @@ const Experience = () => {
                 path={idx % 2 == 0 ? "left" : "right"}
                 duration={1000}
                 className="experience-item card"
+                key={uuidv4()}
               >
                 <h2>{experience.title}</h2>
                 <div className="experience-item-comp-time">

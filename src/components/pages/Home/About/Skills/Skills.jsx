@@ -194,7 +194,6 @@ const Skills = () => {
     for (let i = 0; i < skillsArr.length; i++) {
       for (let j = 0; j < skillsArr[i].words.length; j++) {
         const skillEl = document.querySelector(`#skills-${i}${j}`);
-        console.log(i + 1, j + 1, prevDelay);
 
         init(skillEl, {
           showCursor: false,

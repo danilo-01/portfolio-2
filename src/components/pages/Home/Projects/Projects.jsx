@@ -2,6 +2,7 @@ import React from "react";
 import projects from "./projects.js";
 import Project from "./Project";
 import ScrollAnimationItem from "react-scroll-fade-animation";
+import { v4 as uuidv4 } from "uuid";
 import "./projects.scss";
 
 const Projects = () => {
@@ -12,7 +13,7 @@ const Projects = () => {
       </ScrollAnimationItem>
       <div className="projects-wrapper">
         {projects.map((project, idx) => {
-          return <Project project={project} id={idx} />;
+          return <Project key={uuidv4()} project={project} id={idx} />;
         })}
       </div>
     </div>
