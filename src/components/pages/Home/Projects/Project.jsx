@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollAnimationItem from "react-scroll-fade-animation";
-import "./Project.scss";
 
 const Project = ({ project, id }) => {
   return (

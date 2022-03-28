@@ -66,4 +66,140 @@
       }
     }
   }
+
+  // Mobile
+  @media screen and (min-width: $mobileMinWidth) and (max-width: $mobileMaxWidth) {
+    .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0px 0px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+
+        input {
+          width: 100%;
+          margin: 20px 0;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $maincolor;
+          border-radius: 3px;
+          padding-left: 0px;
+
+          &:hover {
+            border-left: 2px solid $maincolor;
+            border-right: 2px solid $maincolor;
+          }
+        }
+
+        button[type="submit"] {
+          padding: 10px 0px;
+          cursor: pointer;
+          margin: 5px 0;
+          outline: none;
+          border: none;
+          background-color: $maincolor;
+          color: white;
+          width: 20%;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            width: 100%;
+          }
+        }
+
+        textarea {
+          width: 100%;
+          padding-left: 0px;
+          border: none;
+          border-bottom: 1px solid $maincolor;
+
+          &:hover {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+    .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0px 0px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+
+        input {
+          width: 100%;
+          margin: 20px 0;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $maincolor;
+          border-radius: 3px;
+          padding-left: 0px;
+
+          &:hover {
+            border-left: 2px solid $maincolor;
+            border-right: 2px solid $maincolor;
+          }
+        }
+
+        button[type="submit"] {
+          padding: 10px 0px;
+          cursor: pointer;
+          margin: 5px 0;
+          outline: none;
+          border: none;
+          background-color: $maincolor;
+          color: white;
+          width: 20%;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            width: 100%;
+          }
+        }
+
+        textarea {
+          width: 100%;
+          padding-left: 0px;
+          border: none;
+          border-bottom: 1px solid $maincolor;
+
+          &:hover {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Laptops
+  @media screen and (min-width: $laptopMinWidth) and (max-width: $laptopMaxWidth) {
+  }
+
+  // Desktops
+  @media screen and (min-width: $desktopMinWidth) and (max-width: $desktopMaxWidth) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: $largeScreenMinWidth) {
+  }
 }

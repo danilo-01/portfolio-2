@@ -60,7 +60,7 @@
         width: 40px;
         height: 40px;
         top: 0px;
-        color: black;
+        color: $maincolor;
         transition: all 0.15s ease-in;
 
         &:hover {
@@ -68,5 +68,28 @@
         }
       }
     }
+  }
+
+  // Mobile
+  @media screen and (min-width: $mobileMinWidth) and (max-width: $mobileMaxWidth) {
+    width: 100%;
+
+    right: -100%;
+  }
+
+  // Tablet
+  @media screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+  }
+
+  // Laptops
+  @media screen and (min-width: $laptopMinWidth) and (max-width: $laptopMaxWidth) {
+  }
+
+  // Desktops
+  @media screen and (min-width: $desktopMinWidth) and (max-width: $desktopMaxWidth) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: $largeScreenMinWidth) {
   }
 }

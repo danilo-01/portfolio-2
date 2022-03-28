@@ -1,0 +1,100 @@
+@import "../../../../global.scss";
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+  height: 100vh;
+
+  .intro-text-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro-name {
+      display: flex;
+      justify-content: center;
+
+      p {
+        width: 5auto;
+        text-align: center;
+        margin: 4px;
+        font-size: 80px;
+      }
+
+      p:first-child {
+        font-weight: 300;
+        color: $maincolor;
+      }
+
+      p:last-child {
+        font-weight: 700;
+      }
+    }
+
+    .intro-job-title {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      border-top: 1px solid black;
+      position: relative;
+      top: -10px;
+      color: $maincolor;
+      padding: 10px 0;
+      font-size: 30px;
+      box-sizing: border-box;
+    }
+  }
+
+  // Mobile
+  @media screen and (min-width: $mobileMinWidth) and (max-width: $mobileMaxWidth) {
+    .intro-text-wrapper {
+      width: 100%;
+      padding: 0 10px;
+      .intro-name {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        p {
+          font-size: 50px;
+        }
+      }
+
+      .intro-job-title {
+        justify-content: flex-start;
+        font-size: 30px;
+      }
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+    .intro-text-wrapper {
+      padding: 0 0px;
+      .intro-name {
+        justify-content: center;
+        p {
+          font-size: 50px;
+        }
+      }
+
+      .intro-job-title {
+        font-size: 30px;
+      }
+    }
+  }
+
+  // Laptops
+  @media screen and (min-width: $laptopMinWidth) and (max-width: $laptopMaxWidth) {
+  }
+
+  // Desktops
+  @media screen and (min-width: $desktopMinWidth) and (max-width: $desktopMaxWidth) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: $largeScreenMinWidth) {
+  }
+}

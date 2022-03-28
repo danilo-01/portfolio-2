@@ -1,3 +1,5 @@
+@import "../../../../global.scss";
+
 .about {
   display: flex;
   flex-direction: column;
@@ -30,5 +32,74 @@
     width: 100%;
     height: 600px;
     left: 20%;
+  }
+
+  // Mobile
+  @media screen and (min-width: $mobileMinWidth) and (max-width: $mobileMaxWidth) {
+    .about-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .about-skills {
+      display: none;
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+    .about-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .about-skills {
+      display: none;
+    }
+  }
+
+  // Laptops
+  @media screen and (min-width: $laptopMinWidth) and (max-width: $laptopMaxWidth) {
+    .about-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .about-skills {
+      display: none;
+    }
+  }
+
+  // Desktops
+  @media screen and (min-width: $desktopMinWidth) and (max-width: $desktopMaxWidth) {
+    .about-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .about-about {
+        background-color: white;
+
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        padding: 10px 30px;
+        font-size: 23px;
+      }
+    }
+
+    .about-skills {
+      display: flex;
+      width: 50%;
+      height: 600px;
+      position: relative;
+      left: 0;
+    }
+  }
+
+  // Large Screens
+  @media screen and (min-width: $largeScreenMinWidth) {
   }
 }

@@ -1,3 +1,44 @@
 $maincolor: #7f7f7f;
 
 $secondcolor: #27e777;
+
+// Screen sizes
+
+// Mobile
+$mobileMinWidth: 320px;
+$mobileMaxWidth: 480px;
+
+// Tablet
+$tabletMinWidth: 481px;
+$tabletMaxWidth: 768px;
+
+// Laptops
+$laptopMinWidth: 769px;
+$laptopMaxWidth: 1024px;
+
+// Desktops
+$desktopMinWidth: 1025px;
+$desktopMaxWidth: 1200px;
+
+// Large Screens
+$largeScreenMinWidth: 1201px;
+
+// Mobile
+@media screen and (min-width: $mobileMinWidth) and (max-width: $mobileMaxWidth) {
+}
+
+// Tablet
+@media screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+}
+
+// Laptops
+@media screen and (min-width: $laptopMinWidth) and (max-width: $laptopMaxWidth) {
+}
+
+// Desktops
+@media screen and (min-width: $desktopMinWidth) and (max-width: $desktopMaxWidth) {
+}
+
+// Large Screens
+@media screen and (min-width: $largeScreenMinWidth) {
+}

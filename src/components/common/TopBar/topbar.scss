@@ -117,4 +117,58 @@
       }
     }
   }
+
+  // Mobile
+  @media screen and (min-width: $mobileMinWidth) and (max-width: $mobileMaxWidth) {
+    .wrapper {
+      height: 70%;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+          font-size: 30px;
+        }
+
+        .itemContainer {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Tablet
+  @media screen and (min-width: $tabletMinWidth) and (max-width: $tabletMaxWidth) {
+    .wrapper {
+      height: 70%;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+          font-size: 30px;
+        }
+
+        .itemContainer {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Laptops
+  @media screen and (min-width: $laptopMinWidth) and (max-width: $laptopMaxWidth) {
+  }
+
+  // Desktops
+  @media screen and (min-width: $desktopMinWidth) and (max-width: $desktopMaxWidth) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: $largeScreenMinWidth) {
+  }
 }

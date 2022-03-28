@@ -19,54 +19,6 @@
 
 .home {
   user-select: none;
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    width: 100%;
-    height: 100vh;
-
-    .text-wrapper {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .name {
-        display: flex;
-        justify-content: center;
-
-        p {
-          width: 5auto;
-          text-align: center;
-          margin: 4px;
-          font-size: 80px;
-        }
-
-        p:first-child {
-          font-weight: 300;
-          color: $maincolor;
-        }
-
-        p:last-child {
-          font-weight: 700;
-        }
-      }
-
-      .job-title {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        border-top: 1px solid black;
-        position: relative;
-        top: -10px;
-        color: $maincolor;
-        padding: 10px 0;
-        font-size: 30px;
-        box-sizing: border-box;
-      }
-    }
-  }
 
   .experience {
     display: flex;
